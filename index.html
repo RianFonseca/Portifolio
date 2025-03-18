@@ -304,18 +304,41 @@
         @media (max-width: 480px) {
             header {
                 padding: 40px 20px;
+                padding-top: 80px;
             }
     
             header h1 {
                 font-size: 1.8rem;
+                margin-top: 15px;
             }
     
             header p {
                 font-size: 0.9rem;
             }
     
+            nav {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            
             nav ul {
                 gap: 10px;
+                margin-bottom: 10px;
+                order: 1;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .mode-toggle {
+                order: 2;
+                margin-right: 15px;
+                gap: 12px;
+            }
+            
+            .language-toggle {
+                order: 3;
+                margin-left: 0;
+                margin-top: 8px;
             }
     
             section {
@@ -341,7 +364,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mode-toggle">
-            <span>🌙</span>
+            <span> 🌙</span>
             <label class="switch">
                 <input type="checkbox" id="mode-toggle">
                 <span class="slider"></span>
@@ -355,7 +378,7 @@
                 <option value="es">Español</option>
             </select>
         </div>
-    </nav>
+    </nav>    
     <header>
         <h1 data-lang="en">Rian Fonseca</h1>
         <h1 data-lang="pt">Rian Fonseca</h1>
@@ -364,10 +387,11 @@
         <p data-lang="en">Back-End Developer | 21 Years Old | Brazil</p>
         <p data-lang="pt">Desenvolvedor Back-End | 21 Anos | Brasil</p>
         <p data-lang="es">Desarrollador Back-End | 21 Años | Brasil</p>
-    
-        <p data-lang="en">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">LinkedIn</a> | 📂 <a href="https://github.com/RianFonseca">GitHub</a></p>
-        <p data-lang="pt">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">LinkedIn</a> | 📂 <a href="https://github.com/RianFonseca">GitHub</a></p>
-        <p data-lang="es">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">LinkedIn</a> | 📂 <a href="https://github.com/RianFonseca">GitHub</a></p>
+
+        <p data-lang="en"><a href="mailto:rianfonseca55@gmail.com"><img src="gmail.svg" alt="Email" style="height: 16px; vertical-align: middle;"> rianfonseca55@gmail.com</a> | 📞 +55 51 99636-2056 | <a href="https://www.linkedin.com/in/rian-fonseca-428297248/"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn" style="height: 16px; vertical-align: middle;"> LinkedIn</a> | <a href="https://github.com/RianFonseca"><img src="Octicons-mark-github.svg" alt="GitHub" style="height: 16px; vertical-align: middle;"> GitHub</a></p>
+        <p data-lang="pt"><a href="mailto:rianfonseca55@gmail.com"><img src="gmail.svg" alt="Email" style="height: 16px; vertical-align: middle;"> rianfonseca55@gmail.com</a> | 📞 +55 51 99636-2056 | <a href="https://www.linkedin.com/in/rian-fonseca-428297248/"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn" style="height: 16px; vertical-align: middle;"> LinkedIn</a> | <a href="https://github.com/RianFonseca"><img src="Octicons-mark-github.svg" alt="GitHub" style="height: 16px; vertical-align: middle;"> GitHub</a></p>
+        <p data-lang="es"><a href="mailto:rianfonseca55@gmail.com"><img src="gmail.svg" alt="Email" style="height: 16px; vertical-align: middle;"> rianfonseca55@gmail.com</a> | 📞 +55 51 99636-2056 | <a href="https://www.linkedin.com/in/rian-fonseca-428297248/"><img src="linkedin-svgrepo-com.svg" alt="LinkedIn" style="height: 16px; vertical-align: middle;"> LinkedIn</a> | <a href="https://github.com/RianFonseca"><img src="Octicons-mark-github.svg" alt="GitHub" style="height: 16px; vertical-align: middle;"> GitHub</a></p>
+        
     </header>
 
     <section id="about">
@@ -543,7 +567,7 @@
                         <strong>Desenvolvi uma plataforma de educação online abrangente para a Escola COC, permitindo que alunos e professores acessem salas de aula virtuais, tarefas e recursos de forma contínua. A plataforma suporta milhares de usuários simultâneos com alto desempenho e escalabilidade.</strong>
                     </p>
                     <p data-lang="es">
-                        <strong>Desarrollé uma plataforma de educación en línea integral para la Escuela COC, permitiendo que estudiantes y profesores accedan a aulas virtuales, tareas y recursos de manera fluida. La plataforma soporta miles de usuarios simultáneos con alto rendimiento y escalabilidad.</strong>
+                        <strong>Desarrollé una plataforma de educación en línea integral para la Escuela COC, permitiendo que estudiantes y profesores accedan a aulas virtuales, tareas y recursos de manera fluida. La plataforma soporta miles de usuarios simultáneos con alto rendimiento y escalabilidad.</strong>
                     </p>
                 </div>
         
@@ -654,15 +678,6 @@
             </div>
         </section>
     
-        <section id="contact">
-            <h2 data-lang="en">Contact</h2>
-            <h2 data-lang="pt">Contato</h2>
-            <h2 data-lang="es">Contacto</h2>
-            <p data-lang="en">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">LinkedIn Profile</p>
-            <p data-lang="pt">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">Perfil no LinkedIn</p>
-            <p data-lang="es">📧 <a href="mailto:rianfonseca55@gmail.com">rianfonseca55@gmail.com</a> | 📞 +55 51 99663-6205 | 📍 <a href="https://www.linkedin.com/in/rian-fonseca-428297248/">Perfil de LinkedIn</p>
-        </section>
-    
         <footer>
             <p data-lang="en">&copy; 2024 Rian Fonseca - All rights reserved.</p>
             <p data-lang="pt">&copy; 2024 Rian Fonseca - Todos os direitos reservados.</p>
@@ -670,13 +685,11 @@
         </footer>
     
         <script>
-            // Alternar entre modo claro e escuro
             const modeToggle = document.getElementById('mode-toggle');
             modeToggle.addEventListener('change', function () {
                 document.body.classList.toggle('light-mode');
             });
     
-            // Troca de idioma
             const languageSelect = document.getElementById('language-select');
             languageSelect.addEventListener('change', function () {
                 const selectedLanguage = this.value;
@@ -694,7 +707,6 @@
                 });
             }
     
-            // Define o idioma padrão
             changeLanguage('en');
         </script>
     </body>
